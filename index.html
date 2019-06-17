@@ -4,16 +4,14 @@
 <!--[if IE 8]> <html class="lte-ie8 lt-ie9" lang="en" dir="ltr"> <![endif]-->
 <!--[if lte IE 9]> <html class="lte-ie9" lang="en" dir="ltr"> <![endif]-->
 <!--[if gt IE 9]><!-->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" ng-app="microvolution">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
 <!--<![endif]-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
 <!-- Bootstrap Core CSS -->
-<link href="style/nimrod/bootstrap.min.css" rel="stylesheet">
-<!-- Custom Fonts -->
-<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+<link href="bootstrap.min.css" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="https://web-publishing.uq.edu.au/sites/all/themes/custom/uq_standard/favicon.ico" type="image/vnd.microsoft.icon" />
@@ -34,11 +32,8 @@
 @import url("style/uq/css/print.css");
 </style>
 
-<!--link href="style/modal.less" rel="stylesheet/less" type="text/css" /-->
-<link href="app.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body ng-controller="AppCtrl" class="html front page-home" >
 <div class="skip-link"> <a href="#main-menu" class="element-invisible element-focusable">Skip to menu</a> <a href="#main-content" class="element-invisible element-focusable">Skip to content</a> <a href="#site-footer" class="element-invisible element-focusable">Skip to footer</a> </div>
 <div class="site-header">
   <div class="site-header__global-menu">
@@ -68,19 +63,10 @@
       <div id="block-system-main-menu" class="block block-system block-menu main-menu">
         <ul class="menu" id="main-menu">
           <li class="leaf"><a id="home-btn" href="#" title="home" class="menu__link active">Home</a></li>
-          <li class="leaf"><a id="filesmanagermgr" href="#/files-manager" title="filesmanager" class="menu__link">FilesManager</a></li>
-          <li class="leaf"><a id="prepmgr" href="#/preprocessing" title="prepmgr" class="menu__link">Preprocessing</a></li>
-          <li class="leaf"><a id="jobsubmitmgr" href="#/job-submit" title="jobsubmit" class="menu__link">Deconvolution</a></li>
-          <li class="leaf"><a id="convertermgr" href="#/converter" title="converter" class="menu__link">Converter</a></li>
-          <li class="leaf"><a id="joblistmgr" href="#/job-list" title="joblist" class="menu__link">JobList</a></li>
-
-          <li class="leaf"><a id="about-btn" href="#/about" title="about" class="menu__link">About</a></li>
-          <li class="leaf"><a id="faq-btn" href="#/faq" title="faq" class="menu__link">FAQs</a></li>
-          <li class="leaf"><a id="accesspolicy-btn" href="#/accesspolicy" title="policy" class="menu__link">Policy</a></li>
-          <li class="leaf"><a id="login" href="javascript:void(0);" 
-                                  ng-disabled="loginButtonDisabled('wiener')" 
-                                  ng-click="startLogin('wiener')" class="menu__link">Sign in</a></li>
-          <li class="leaf"><a id="logout-btn" ng-click="doSignout()" title="signout" class="menu__link">Logout</a></li>
+          <li class="leaf"><a id="portal-btn" href="/portal/" title="portal" class="menu__link">Portal</a></li>
+          <li class="leaf"><a id="contact-btn" href="#contact" title="contact" class="menu__link">Contact</a></li>
+          <li class="leaf"><a id="support-btn" target="_blank" href="http://support.localhost/" title="support" class="menu__link">Support</a></li>
+          <li class="leaf"><a id="releases-btn" target="_blank" href="http://support.localhost/releases" title="releases" class="menu__link">Releases</a></li>
         </ul>
       </div>
     </div>
@@ -113,7 +99,94 @@
   </header>
 
 
-<div class="page" ng-view></div>
+<div class="page">
+      <div class="container">
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to the IMB Image Processing Portal
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-magic"></i> What is this? </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p> A Web portal that allows users to submit image processing jobs to the <a href="https://rcc.uq.edu.au/wiener">Wiener</a> HPC.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-user fa-fw"></i> Who can use? </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p> Anyone with a UQ and Wiener account. A <a href="https://research.uq.edu.au/rmbt/uqrdm">UQ-RDM</a> needs to be mounted on the Wiener HPC to use with the portal. Please contact <a href="mailto:i.porebski@uq.edu.au">Irek Porebski</a> for more details.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-cog"></i> Why portal? </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Easy to access image processing pipelines from the Web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row" id="Features">
+            <div class="col-lg-12">
+                <h2 class="page-header">Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>More about Microvolution Portal features here.</p>
+            </div>
+            <div class="col-md-6 google-slide">
+                <iframe 
+                    src="https://docs.google.com/presentation/d/1nQXe45Z9ANSGBQbVOdo0BhJF6jtMviodJViSt_Q4FiE/embed?start=false&loop=false&delayms=3000" 
+                    frameborder="0" width="1200" height="330" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+                        Your browser does not support iframes
+                </iframe>
+            </div>
+        </div>
+        <hr>
+
+        <div id="contact">
+          <div class="col-md-6">
+              <h2>Contact Details</h2>
+              <p>
+                  ACRF Cancer Biology Imaging Facility,
+                  IMB, <br />
+                  level 6N, building 80, 306 Carmody Road, <br />
+                  University of Queensland, <br />
+                  St Lucia, Queensland 4072, Australia
+              </p>
+              <p><i class="fa fa-envelope-o"></i>
+                  <a href="mailto:microscopes@imb.uq.edu.au">microscopes@imb.uq.edu.au</a>
+                  &emsp;
+                  <a href="https://twitter.com/IMBmicroscopy"><img src="images/twitter.png" alt="twitter" class="alignnone size-full wp-image-653"/></a>
+              </p>
+          </div>
+
+          <div class="col-md-6">
+              <h2>Tech support</h2>
+              <p>Please contact <a href="mailto:i.porebski@uq.edu.au">Irek Porebski</a> regarding Wiener account and UQ-RDM </p>
+              <p>Please contact <a href="mailto:rcc-support@uq.edu.au">UQ RCC</a> regarding the portal issues </p>
+                
+          </div>
+          <hr>
+        </div>
+        
+    </div>
+
+</div>
 <div class="page">
   <div class="page__content"> 
     
@@ -139,10 +212,15 @@
           </p>
         </div>
       </div>
+
     </div>
     <!-- partners panel END -->   
   </div>
 </div>
+
+
+
+
 
 <div id="site-footer" class="site-footer">
   <div class="site-footer__content">
@@ -159,7 +237,6 @@
     <div class="row">
       <div class="site-footer__footer">
         <div class="columns large-9 medium-8"> <a href="https://www.uq.edu.au/terms-of-use/" rel="external" class="footer__link footer__terms-link">Privacy &amp; Terms of use</a> &nbsp; | &nbsp; <a href="https://www.uq.edu.au/feedback?r=https%3A//engage.uq.edu.au/" rel="external" class="footer__link footer__feedback-link">Feedback</a> </div>
-        <div class="columns large-3 medium-4"> </div>
       </div>
     </div>
   </div>
@@ -176,40 +253,6 @@ $('.carousel').carousel({
     interval: 5000
 })
 </script>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-aria/angular-aria.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-material/angular-material.js"></script>
-<link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css"></link>
-<script src="bower_components/angular-ui-grid/ui-grid.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
 
-<script src="bower_components/ng-sortable/dist/ng-sortable.min.js"></script>
-<link rel="stylesheet" href="bower_components/ng-sortable/dist/ng-sortable.min.css">
-<link rel="stylesheet" href="bower_components/ng-sortable/dist/ng-sortable.style.min.css">
-
-<script src="services/services.module.js"></script>
-<script src="services/services.service.js"></script>
-
-<script src="app.js"></script>
-<script src="landingpage/landingpage.js"></script>
-<script src="partials/partials.js"></script>
-<script src="job-list/job-list.js"></script>
-<script src="files-manager/files-manager.js"></script>
-<script src="job-submit/job-submit.js"></script>
-<script src="preprocessing/preprocessing.js"></script>
-<script src="partials/faqdirective.js"></script>
-<script src="converter/converter.js"></script>
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-
-<script src="filesexplorer/filesexplorer.module.js"></script>
-<script src="filesexplorer/filesexplorer.component.js"></script>
-
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 </body>
 </html>
