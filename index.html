@@ -63,7 +63,7 @@
       <div id="block-system-main-menu" class="block block-system block-menu main-menu">
         <ul class="menu" id="main-menu">
           <li class="leaf"><a id="home-btn" href="#" title="home" class="menu__link active">Home</a></li>
-          <li class="leaf"><a id="portal-btn" href="/portal/" title="portal" class="menu__link">Portal</a></li>
+          <li class="leaf"><a id="portal-btn" href="https://imbmicroscopy.rcc.uq.edu.au/" title="portal" class="menu__link">Portal</a></li>
           <li class="leaf"><a id="contact-btn" href="#contact" title="contact" class="menu__link">Contact</a></li>
           <li class="leaf"><a id="support-btn" target="_blank" href="https://support.imbmicroscopy.rcc.uq.edu.au/" title="support" class="menu__link">Support</a></li>
           <li class="leaf"><a id="releases-btn" target="_blank" href="https://support.imbmicroscopy.rcc.uq.edu.au/releases" title="releases" class="menu__link">Releases</a></li>
@@ -105,7 +105,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to the IMB Image Processing Portal
+                    Welcome to the IMB Image Processing Portal (IPP)
                 </h1>
             </div>
             <div class="col-md-4">
@@ -114,7 +114,9 @@
                         <h4><i class="fa fa-fw fa-magic"></i> What is this? </h4>
                     </div>
                     <div class="panel-body">
-                        <p> A Web portal that allows users to submit image processing jobs to the <a href="https://rcc.uq.edu.au/wiener">Wiener</a> HPC.</p>
+                      <p>The <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> is a HTML based web interface for biologists to interact with High Performance Compute (HPC) systems at The University of Queensland. <p/>
+                         The <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> is designed and funded by the <a href="https://imb.uq.edu.au/microscopes">IMB Microscopy Facility</a> & the <a href="https://rcc.uq.edu.au"> Research Computing Centre (RCC)</a></p>
+                      <p>
                     </div>
                 </div>
             </div>
@@ -134,7 +136,7 @@
                         <h4><i class="fa fa-fw fa-cog"></i> Why portal? </h4>
                     </div>
                     <div class="panel-body">
-                        <p>Easy to access image processing pipelines from the Web.</p>
+                      <p>The <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> makes using HPC resources possible by providing biologists with interactive tools in familiar and intuitive ways, by generating the required SLURM scripts and job submission documents automatically in the background without the need to know command-line! </p>
                     </div>
                 </div>
             </div>
@@ -146,7 +148,15 @@
                 <h2 class="page-header">Features</h2>
             </div>
             <div class="col-md-6">
-                <p>More about Microvolution Portal features here.</p>
+              <p>The IPP utilises the <a href="https://rcc.uq.edu.au/wiener">Wiener</a> GPU-accelerated HPC system to make use of massively parallel image processing jobs. 
+                The portal is backed by the <a href="https://rcc.uq.edu.au/data-storage">MeDiCI</a> network infrastructure and can access image data-sets mounted on the <a href="https://research.uq.edu.au/rmbt/uqrdm">Research Data Manager (RDM)</a> GPFS based file system.</p>  
+              
+                <p>Currently the <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> has the following pipelines enabled:<p/>
+                <li> <b>File Management</b>: The ability to explore, copy/paste, and delete files interactively from within the browser, allowing files to be moved between collections, or organised on native HPC infrastructure, without having to bring the files locally to the users device.</li>
+                <li> <b>Converter:</b> File conversion between the .ims (Imaris/Fusion) filetype and .tiff individual Z-stacks for accelerated ingest into Wiener. Coming soon .sld (Slidebook) will be implemented as a parallel processed for SButility (also developed by RCC).</li>
+                <li> <b>PreProcessing:</b> Batch processing and deskewing of Lattice Light-Sheet data-sets, as well as PSF distillation (bead centring & averaging).</li>
+                <li> <b>Deconvolution:</b> Currently utilising Microvolution Deconvolution (with Light-Sheet, Widefield, Confocal and 2-Photon modalities supported) for either individual files or directories of files. This mode also supports Generating a PSF or suppling your own measured PSF files. Deconvolution is currently supported on up to 10 nodes simultaneously utilising up to 40 GPUs.</li>
+                <li> <b>Job List:</b> Shows currently running jobs by the user by querying the SLURM queue</li>
             </div>
             <div class="col-md-6 google-slide">
                 <iframe 
@@ -177,8 +187,9 @@
 
           <div class="col-md-6">
               <h2>Tech support</h2>
-              <p>Please contact <a href="mailto:i.porebski@uq.edu.au">Irek Porebski</a> regarding Wiener account and UQ-RDM </p>
-              <p>Please contact <a href="mailto:rcc-support@uq.edu.au">UQ RCC</a> regarding the portal issues </p>
+              <p>Please contact <a href="mailto:microscopes@imb.uq.edu.au">IMB Microscopy</a> for training and user support.</p>
+              <p>Please contact <a href="mailto:i.porebski@uq.edu.au">Irek Porebski</a> regarding Wiener account and UQ-RDM.</p>
+              <p>Please contact <a href="mailto:rcc-support@uq.edu.au">UQ RCC</a> regarding technical issues.</p>
                 
           </div>
           <hr>
