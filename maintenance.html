@@ -63,7 +63,6 @@
       <div id="block-system-main-menu" class="block block-system block-menu main-menu">
         <ul class="menu" id="main-menu">
           <li class="leaf"><a id="home-btn" href="#" title="home" class="menu__link active">Home</a></li>
-          <li class="leaf"><a id="portal-btn" target="_blank" href="/" title="portal" class="menu__link">Portal</a></li>
           <li class="leaf"><a id="contact-btn" href="#contact" title="contact" class="menu__link">Contact</a></li>
           <li class="leaf"><a id="support-btn" target="_blank" href="https://uq-rcc.github.io/ipp-docs/" title="support" class="menu__link">Documentation</a></li>
           <li class="leaf"><a id="releases-btn" target="_blank" href="https://github.com/UQ-RCC/ipp/releases" title="releases" class="menu__link">Releases</a></li>
@@ -79,23 +78,7 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
       </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-          <div class="item active carousel-share">
-              <img src="images/microscopy/facilities-hero1.jpg" alt="One"/>
-          </div>
-          <div class="item carousel-share">
-              <img src="images/microscopy/facilities-hero2.jpg" alt="Two"/>
-          </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="icon-next"></span>
-      </a>
+      
   </header>
 
 
@@ -105,68 +88,19 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to the Image Processing Portal (IPP)
+                    The portal is currently unavailable due to maintenance.  
                 </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-magic"></i> What is this? </h4>
-                    </div>
-                    <div class="panel-body">
-                      <p>The <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> is a HTML based web interface for biologists to interact with High Performance Compute (HPC) systems at The University of Queensland. <p/>
-                         The <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> is designed and funded by the <a href="https://imb.uq.edu.au/microscopes">IMB Microscopy Facility</a> & the <a href="https://rcc.uq.edu.au"> Research Computing Centre (RCC)</a></p>
-                      <p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-user fa-fw"></i> Who can use? </h4>
-                    </div>
-                    <div class="panel-body">
-                        <p> Anyone with a UQ and Wiener account. A <a href="https://research.uq.edu.au/rmbt/uqrdm">UQ-RDM</a> needs to be mounted on the Wiener HPC to use with the portal. Please contact <a href="mailto:i.porebski@uq.edu.au">Irek Porebski</a> for more details.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-cog"></i> Why portal? </h4>
-                    </div>
-                    <div class="panel-body">
-                      <p>The <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> makes using HPC resources possible by providing biologists with interactive tools in familiar and intuitive ways, by generating the required SLURM scripts and job submission documents automatically in the background without the need to know command-line! </p>
-                    </div>
-                </div>
+                <br />
+                <h3>
+                  Please follow <a href="https://github.com/UQ-RCC/ipp/issues/12">maintenance page</a> for updates. 
+                </h3>
+                
             </div>
         </div>
 
-        <!-- Features Section -->
-        <div class="row" id="Features">
-            <div class="col-lg-12">
-                <h2 class="page-header">Features</h2>
-            </div>
-            <div class="col-md-6">
-              <p>The IPP utilises the <a href="https://rcc.uq.edu.au/wiener">Wiener</a> GPU-accelerated HPC system to make use of massively parallel image processing jobs. 
-                The portal is backed by the <a href="https://rcc.uq.edu.au/data-storage">MeDiCI</a> network infrastructure and can access image data-sets mounted on the <a href="https://research.uq.edu.au/rmbt/uqrdm">Research Data Manager (RDM)</a> GPFS based file system.</p>  
-              
-                <p>Currently the <a href="https://imbmicroscopy.rcc.uq.edu.au/">IPP</a> has the following pipelines enabled:<p/>
-                <li> <b>File Management</b>: The ability to explore, copy/paste, and delete files interactively from within the browser, allowing files to be moved between collections, or organised on native HPC infrastructure, without having to bring the files locally to the users device.</li>
-                <li> <b>Converter:</b> File conversion between the .ims (Imaris/Fusion) filetype and .tiff individual Z-stacks for accelerated ingest into Wiener. Coming soon .sld (Slidebook) will be implemented as a parallel processed for SButility (also developed by RCC).</li>
-                <li> <b>PreProcessing:</b> Batch processing and deskewing of Lattice Light-Sheet data-sets, as well as PSF distillation (bead centring & averaging).</li>
-                <li> <b>Deconvolution:</b> Currently utilising Microvolution Deconvolution (with Light-Sheet, Widefield, Confocal and 2-Photon modalities supported) for either individual files or directories of files. This mode also supports Generating a PSF or suppling your own measured PSF files. Deconvolution is currently supported on up to 10 nodes simultaneously utilising up to 40 GPUs.</li>
-                <li> <b>Job List:</b> Shows currently running jobs by the user by querying the SLURM queue</li>
-            </div>
-            <div class="col-md-6 google-slide">
-                <iframe 
-                    src="https://docs.google.com/presentation/d/1nQXe45Z9ANSGBQbVOdo0BhJF6jtMviodJViSt_Q4FiE/embed?start=false&loop=false&delayms=3000" 
-                    frameborder="0" width="1200" height="330" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-                        Your browser does not support iframes
-                </iframe>
-            </div>
-        </div>
-        <hr>
+
+        <p></p>
+        <br />
 
         <div id="contact">
           <div class="col-md-6">
@@ -216,9 +150,6 @@
             </a> 
             <a href="https://imb.uq.edu.au/">
               <img alt="IMB" height="120" src="images/IMB-logo.png" width="200" style="background-color:black;" />
-            </a>
-            <a href="https://www.tern.org.au/">
-              <img alt="TERN" height="120" src="images/tern-logo.png" width="200" />
             </a>
           </p>
         </div>
