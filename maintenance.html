@@ -84,83 +84,131 @@
 
 <div class="page">
       <div class="container">
-        <!-- Marketing Icons Section -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    The portal is currently unavailable due to maintenance.  
-                </h1>
-                <br />
-                <h3>
-                  Please follow <a href="https://github.com/UQ-RCC/ipp/issues/12">maintenance page</a> for updates. 
-                </h3>
-                
-            </div>
+            <h1 class="page-header">
+                The portal is currently unavailable due to maintenance.  
+            </h1>
+            <br />
+            <h3>
+              Please follow <a href="https://github.com/UQ-RCC/ipp/issues/12">maintenance status page</a> for updates. 
+            </h3>
+
         </div>
-
-
-        <p></p>
+        <p />
         <br />
-
-        <div id="contact">
-          <div class="col-md-6">
-              <h2>Contact Details</h2>
-              <p>
-                  ACRF Cancer Biology Imaging Facility,
-                  IMB, <br />
-                  level 6N, building 80, 306 Carmody Road, <br />
-                  University of Queensland, <br />
-                  St Lucia, Queensland 4072, Australia
-              </p>
-              <p><i class="fa fa-envelope-o"></i>
-                  <a href="mailto:microscopes@imb.uq.edu.au">microscopes@imb.uq.edu.au</a>
-                  &emsp;
-                  <a href="https://twitter.com/IMBmicroscopy"><img src="images/twitter.png" alt="twitter" class="alignnone size-full wp-image-653"/></a>
-              </p>
-          </div>
-
-          <div class="col-md-6">
-              <h2>Tech support</h2>
-              <p>Please contact <a href="mailto:microscopes@imb.uq.edu.au">IMB Microscopy</a> for training and user support.</p>
-              <p>Please contact <a href="mailto:helpdesk@qbi.uq.edu.au">QBI helpdesk</a> regarding Wiener account and UQ-RDM.</p>
-              <p>Please contact <a href="mailto:rcc-support@uq.edu.au">UQ RCC</a> regarding technical issues.</p>
-                
-          </div>
-          <hr>
-        </div>
-        
     </div>
-
 </div>
-<div class="page">
-  <div class="page__content"> 
-    
-    <!-- About panel END --> 
-    <!-- partners panel  START -->
-    <div class="panel-separator"></div>
-    <div class="section--centered section">
-      <div class="section__container">
-        <div class="section__header">
-          <h2 class="section__title">Partners</h2>
-        </div>
-        <div class="section__content">
-          <p style="text-align:center">
-            <a href="https://rcc.uq.edu.au/">
-              <img alt="Research Computing Centre - UQ" height="120" src="images/rcc-logo.jpg" width="200" />
-            </a> 
-            <a href="https://imb.uq.edu.au/">
-              <img alt="IMB" height="120" src="images/IMB-logo.png" width="360" style="background-color:black;" />
-            </a>
-          </p>
-        </div>
-      </div>
 
+
+<div class="page" style="margin-bottom: 50px;">
+  <div class="container">
+    <!-- Marketing Icons Section -->
+    <div class="row" id="what">
+      <h3 class="page-header">
+        What is the Image Processing Portal?
+      </h3>
+      The <a href="https://github.com/UQ-RCC/ipp">IPP</a> is a HTML based web interface for biologists to interact with High Performance Compute (HPC) systems at The University of Queensland.
+      The <a href="https://github.com/UQ-RCC/ipp">IPP</a> is designed and funded by the <a href="https://imb.uq.edu.au/microscopes">IMB Microscopy Facility</a> & the <a href="https://rcc.uq.edu.au"> Research Computing Centre (RCC)</a>
     </div>
-    <!-- partners panel END -->   
+    
+
+    <div class="row" id="who">    
+      <h3 class="page-header">
+        Who can use the portal?
+      </h3>
+      Anyone with a UQ and Wiener account. A <a href="https://research.uq.edu.au/rmbt/uqrdm">UQ-RDM</a> needs to be mounted on the Wiener HPC to use with the portal. 
+      Click on the following link to start with an email template and copy the RDM collection shortnames into the email <a href="mailto:microscopes@imb.uq.edu.au?&subject=Wiener HPC Portal Access&body=Could you please provide me with access to the Wiener HPC via the Image Processing Portal%0A%0A I would also like to have access to the CVL desktops at Wiener.%0A%0A In addition, I will require the following RDM collections mounted on both Wiener and my institute caches:%0A* RDM short name %0A%0A%0ABest regards,">email link</a>
+    </div>
+
+    <div class="row" id="why">
+      <h3 class="page-header">
+        Why a portal?
+      </h3>
+        <p>The <a href="https://github.com/UQ-RCC/ipp">IPP</a> makes using HPC resources possible by providing biologists with interactive tools in familiar and intuitive ways, by generating the required SLURM scripts and job submission documents automatically in the background without the need to know command-line!
+    </div>  
+
+    <!-- Features Section -->
+    <div class="row" id="Features">
+        <h3 class="page-header">Features</h3>
+          <p>The IPP utilises the <a href="https://rcc.uq.edu.au/wiener">Wiener</a> GPU-accelerated HPC system to make use of massively parallel image processing jobs. 
+            The portal is backed by the <a href="https://rcc.uq.edu.au/data-storage">MeDiCI</a> network infrastructure and can access image data-sets mounted on the <a href="https://research.uq.edu.au/rmbt/uqrdm">Research Data Manager (RDM)</a> GPFS based file system.</p>  
+          
+            <p>Currently the <a href="https://github.com/UQ-RCC/ipp">IPP</a> has the following pipelines enabled:<p/>
+            <div class="col-lg-12">
+              <li> <b>File Management</b>: The ability to explore, copy/paste, and delete files interactively from within the browser, allowing files to be moved between collections, or organised on native HPC infrastructure, without having to bring the files locally to the users device.</li>
+              <li> <b>Desktops Manager</b>: The ability to spin up one of 3 different flavours of Linux virtual desktop (running CVL) to launch files into from the file browser.</li>
+              <li> <b>Converter:</b> File conversion between the .ims (Imaris/Fusion) filetype and .tiff individual Z-stacks for accelerated ingest into Wiener. Coming soon .sld (Slidebook) will be implemented as a parallel processed for SButility (also developed by RCC).</li>
+              <li> <b>PreProcessing:</b> Batch processing and deskewing of Lattice Light-Sheet data-sets, as well as PSF distillation (bead centring & averaging).</li>
+              <li> <b>Deconvolution:</b> Currently utilising Microvolution Deconvolution (with Light-Sheet, Widefield, Confocal and 2-Photon modalities supported) for either individual files or directories of files. This mode also supports Generating a PSF or suppling your own measured PSF files. Deconvolution is currently supported on up to 10 nodes simultaneously utilising up to 40 GPUs.</li>
+              <li> <b>Job List:</b> Shows currently running jobs by the user by querying the SLURM queue</li>
+          </div>
+    </div>
   </div>
 </div>
 
 
+<div class="page" style="background-color:black;">
+  <div class="container" id="contact"> 
+      <div class="col-md-4" style="color:white; margin-top: 20px;font-size:14px">
+        <h5>Contacts </h5>
+        <hr />
+        <div>
+          <p>
+            <u>IMB Microscopy</u><br />
+            <em>Project Lead & Design</em>
+            <div align="center">
+              <a href="mailto:microscopes@imb.uq.edu.au">microscopes@imb.uq.edu.au</a>
+            </div>
+          </p>
+          <p>
+            <u>Research Computing Center</u><br />
+            <em>Lead Developer</em>
+            <div align="center">
+              <a href="mailto:h.nguyen30@uq.edu.au">h.nguyen30@uq.edu.au</a>
+            </div>
+          </p>
+          <p>
+            <u>QBI IT Support</u><br />
+            <em>HPC Access and Support</em><br />
+            <div align="center">
+              <a href="mailto:helpdesk@qbi.uq.edu.au">helpdesk@qbi.uq.edu.au</a>
+            </div>
+          </p>
+        </div>
+      </div>    
+
+      <div class="col-md-4" style="color:white; margin-top: 20px;font-size:14px">
+        <h5>Mailing address </h5>
+        <hr />
+        <div>
+          ACRF Cancer Biology Imaging Facility, <br />
+          Institute for Molecular Bioscience, <br />
+          level 6N, 306 Carmody Road, <br />
+          Building 80 <br /> 
+          University of Queensland, <br />
+          4072, St Lucia, <br />
+          Queensland, Australia
+        </div>
+      </div>    
+
+      <div class="col-md-4" style="color:white; margin-top: 20px;font-size:14px">
+        <h5> Partners & support </h5>
+        <hr />
+        <div>
+          <p>
+            <a href="https://imb.uq.edu.au/microscopy">IMB Microscopy</a> 
+          </p>
+          <p>
+            <a href="https://rcc.uq.edu.au/">UQ Research Computing Centre</a> 
+          </p>
+          <p>
+            <a href="https://imb.uq.edu.au/profile/356/nicholas-condon">Dr Nicholas Condon</a> is supported by a Chan Zuckerberg Intitiative Fellowship
+          </p>
+        </div>
+      </div> 
+   
+  </div>
+</div>
 
 
 
