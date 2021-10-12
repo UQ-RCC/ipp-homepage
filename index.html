@@ -37,7 +37,7 @@
   #overlay{
       position: absolute;
       padding: 0;
-      top: 70px;
+      top: 350px;
       left: 0;
       width: 100%;
       height: 80px;
@@ -98,39 +98,16 @@
       </div>
     </div>
   </div>
-  <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-          <div class="item active carousel-share">
-              <img src="images/microscopy/facilities-hero1.jpg" alt="One"/>
-          </div>
-          <div class="item carousel-share">
-              <img src="images/microscopy/facilities-hero2.jpg" alt="Two"/>
-          </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="icon-next"></span>
-      </a>
-
+  <div class="panel-pane__content">
+    <div class="hero-banner--thin light-palette hero-banner hero-banner--background-image" style="background-image:url(&quot;images/microscopy/facilities-hero1.jpg&quot;)">
       <div id="overlay" align="center">
-          <button onclick="window.location.href='/portal/'">Login to Portal</button>
-          <button onclick="window.open('mailto:microscopes@imb.uq.edu.au?&subject=Wiener HPC Portal Access&body=Could you please provide me with access to the Wiener HPC via the Image Processing Portal%0A%0A I would also like to have access to the CVL desktops at Wiener.%0A%0A In addition, I will require the following RDM collections mounted on both Wiener and my institute caches:%0A* RDM short name %0A%0A%0ABest regards,')">Request Access</button>
+        <button onclick="window.location.href='/portal/'">Login to Portal</button>
+        <button onclick="window.open('https://uq-rcc.github.io/ipp-docs/#/access')">Request Access</button>
       </div>
-
-  </header>
-
+    </div>
+  </div>
+  
 
 <div class="page" style="margin-bottom: 50px;">
   <div class="container">
@@ -178,7 +155,7 @@
       </div>
 
       <div class="column large-3 medium-6">
-        <a class="card__primary-link" href="mailto:microscopes@imb.uq.edu.au?&subject=Wiener HPC Portal Access&body=Could you please provide me with access to the Wiener HPC via the Image Processing Portal%0A%0A I would also like to have access to the CVL desktops at Wiener.%0A%0A In addition, I will require the following RDM collections mounted on both Wiener and my institute caches:%0A* RDM short name %0A%0A%0ABest regards," target="_blank">
+        <a class="card__primary-link" href="https://uq-rcc.github.io/ipp-docs/#/access" target="_blank">
           <div class="entity entity-paragraphs-item paragraphs-item-card-custom card--square card card--background-image" style="background-image: url('images/cardimages/requestaccess.png')">     
             <div class="card__header"></div>
             <div class="card__body">
@@ -215,8 +192,7 @@
       <h3 class="page-header">
         Who can use the portal?
       </h3>
-      Anyone with a UQ and Wiener account. A <a href="https://research.uq.edu.au/rmbt/uqrdm">UQ-RDM</a> needs to be mounted on the Wiener HPC to use with the portal. 
-      Click on the following link to start with an email template and copy the RDM collection shortnames into the email <a href="mailto:microscopes@imb.uq.edu.au?&subject=Wiener HPC Portal Access&body=Could you please provide me with access to the Wiener HPC via the Image Processing Portal%0A%0A I would also like to have access to the CVL desktops at Wiener.%0A%0A In addition, I will require the following RDM collections mounted on both Wiener and my institute caches:%0A* RDM short name %0A%0A%0ABest regards,">email link</a>
+      Anyone with a UQ and Wiener account. A UQ-RDM needs to be mounted on the Wiener HPC to use with the portal. Click on the following <a href="https://uq-rcc.github.io/ipp-docs/#/access">link</a> to to learn more about setting up an account on the portal.
     </div>
 
     <div class="row" id="why">
@@ -235,7 +211,7 @@
             <p>Currently the <a href="https://github.com/UQ-RCC/ipp">IPP</a> has the following pipelines enabled:<p/>
             <div class="col-lg-12">
               <li> <b>File Management</b>: The ability to explore, copy/paste, and delete files interactively from within the browser, allowing files to be moved between collections, or organised on native HPC infrastructure, without having to bring the files locally to the users device.</li>
-              <li> <b>Desktops Manager</b>: The ability to spin up one of 3 different flavours of Linux virtual desktop (running CVL) to launch files into from the file browser.</li>
+              <li> <b>Desktops Manager</b>: The ability to spin up one of 3 different flavours of Linux virtual desktop (running <a href="https://www.cvl.org.au/">CVL</a>) to launch files into from the file browser.</li>
               <li> <b>Converter:</b> File conversion between the .ims (Imaris/Fusion) filetype and .tiff individual Z-stacks for accelerated ingest into Wiener. Coming soon .sld (Slidebook) will be implemented as a parallel processed for SButility (also developed by RCC).</li>
               <li> <b>PreProcessing:</b> Batch processing and deskewing of Lattice Light-Sheet data-sets, as well as PSF distillation (bead centring & averaging).</li>
               <li> <b>Deconvolution:</b> Currently utilising Microvolution Deconvolution (with Light-Sheet, Widefield, Confocal and 2-Photon modalities supported) for either individual files or directories of files. This mode also supports Generating a PSF or suppling your own measured PSF files. Deconvolution is currently supported on up to 10 nodes simultaneously utilising up to 40 GPUs.</li>
@@ -254,21 +230,21 @@
         <hr />
         <div>
           <p>
-            <u>IMB Microscopy</u><br />
+            <a href="https://imb.uq.edu.au/microscopy" target="blank">IMB Microscopy</a><br />
             <em>Project Lead & Design</em>
             <div align="center">
               <a href="mailto:microscopes@imb.uq.edu.au">microscopes@imb.uq.edu.au</a>
             </div>
           </p>
           <p>
-            <u>Research Computing Center</u><br />
+            <a href="https://rcc.uq.edu.au/" target="blank">Research Computing Center</a><br />
             <em>Lead Developer</em>
             <div align="center">
               <a href="mailto:h.nguyen30@uq.edu.au">h.nguyen30@uq.edu.au</a>
             </div>
           </p>
           <p>
-            <u>QBI IT Support</u><br />
+            <a href="https://qbi.uq.edu.au/research/facilities/information-technology-services" target="blank">QBI IT Support</a><br />
             <em>HPC Access and Support</em><br />
             <div align="center">
               <a href="mailto:helpdesk@qbi.uq.edu.au">helpdesk@qbi.uq.edu.au</a>
