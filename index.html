@@ -18,50 +18,32 @@
 <link rel="shortcut icon" href="https://web-publishing.uq.edu.au/sites/all/themes/custom/uq_standard/favicon.ico" type="image/vnd.microsoft.icon" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Image Processing Portal - The University of Queensland, Australia</title>
-<!--link type="text/css" rel="stylesheet" href="https://static.uq.net.au/v1/fonts/Roboto/roboto.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://static.uq.net.au/v6/fonts/Roboto/roboto.css" media="all" />
 <style type="text/css" media="all">
-@import url("https://web-publishing.uq.edu.au/sites/all/themes/custom/uq_standard/css/styles.css?olt1wp");
+@import url("https://web-publishing.uq.edu.au/sites/all/themes/custom/uq_standard/css/styles.css?r2a071");
 </style>
 <style type="text/css" media="print">
-@import url("https://web-publishing.uq.edu.au/sites/all/themes/custom/uq_standard/css/print.css?olt1wp");
-</style-->
-
+@import url("https://web-publishing.uq.edu.au/sites/all/themes/custom/uq_standard/css/print.css?r2a071");
+</style>
+<!--
 <style type="text/css" media="all">
-@import url("style/uq/css/styles.css");
+@import url("/style/uq/css/styles.css");
 </style>
 <style type="text/css" media="print">
-@import url("style/uq/css/print.css");
+@import url("/style/uq/css/print.css");
 </style>
-
-<style>
-  #overlay{
-      position: absolute;
-      padding: 0;
-      top: 350px;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      background-color: Transparent;
-      opacity: 1;
-      transition: opacity .5s;
-      z-index: 0;
-    }
-
-    button {
-      background: none;
-      border: 2px solid white;/* this is for button border*/
-      position: relative;
-      height: 80px;
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    
-
-  </style>
+-->
   
 </head>
-<div class="skip-link"> <a href="#main-menu" class="element-invisible element-focusable">Skip to menu</a> <a href="#main-content" class="element-invisible element-focusable">Skip to content</a> <a href="#site-footer" class="element-invisible element-focusable">Skip to footer</a> </div>
+
+
+<body html not-front not-logged-in no-sidebars page-node node-type-uq-basic-page basic-page>
+
+<div class="skip-link">
+  <a href="#main-menu" class="element-invisible element-focusable">Skip to menu</a>
+  <a href="#main-content" class="element-invisible element-focusable">Skip to content</a>
+  <a href="#site-footer" class="element-invisible element-focusable">Skip to footer</a>
+</div>
 <div class="site-header">
   <div class="site-header__global-menu">
     <div class="global-menu hide-for-small-only">
@@ -79,35 +61,55 @@
     </div>
   </div>
   <div class="site-header__content">
-    <div class="columns medium-11 large-8"> <a href="https://www.uq.edu.au/" title="UQ Homepage" class="uq-logo">The University of Queensland</a>
-      <h2 class="site-title has-2-lines"><a class="site-title__link" rel="home" title="Image Processing Portal" href="https://uq.edu.au/">Image Processing Portal<br>
-        </a></h2>
+    <div class="columns medium-11 large-8"> 
+      <a href="https://www.uq.edu.au/" title="UQ Homepage" class="uq-logo">The University of Queensland</a>
+      <h2 class="site-title">
+        <a class="site-title__link" rel="home" title="Image Processing Portal" href="https://uq.edu.au/">
+          <span class="hide-for-small-only">Image Processing Portal</span>
+          <span class="show-for-small-only">Image Processing Portal</span>
+        </a>
+      </h2>
     </div>
   </div>
 </div>
-  <div class="navigation">
-    <div class="region region-navigation">
-      <div id="block-system-main-menu" class="block block-system block-menu main-menu">
-        <ul class="menu" id="main-menu">
-          <li class="leaf"><a id="home-btn" href="#" title="home" class="menu__link active">Home</a></li>
-          <li class="leaf"><a id="portal-btn" href="/portal/" title="portal" class="menu__link">Portal</a></li>
-          <li class="leaf"><a id="contact-btn" href="https://uq-rcc.github.io/ipp-docs/#/contact" title="contact" class="menu__link" target="blank">Contact</a></li>
-          <li class="leaf"><a id="support-btn" target="_blank" href="https://uq-rcc.github.io/ipp-docs/" title="support" class="menu__link">Documentation</a></li>
-          <li class="leaf"><a id="releases-btn" target="_blank" href="https://github.com/UQ-RCC/ipp/releases" title="releases" class="menu__link">Releases</a></li>
-        </ul>
+<div class="navigation">
+  <div class="region region-navigation">
+    <div id="main-menu" class="block block-system block-menu main-menu">
+      <div class="main-menu__mobile-menu hide-for-large-up">
+        <a href="#" class="main-menu__mobile-menu-link icon icon-bars icon--prefix" title="Menu">Menu</a>
       </div>
-    </div>
-  </div>
 
-  <div class="panel-pane__content">
-    <div class="hero-banner--thin light-palette hero-banner hero-banner--background-image" style="background-image:url(&quot;images/microscopy/facilities-hero1.jpg&quot;)">
-      <div id="overlay" align="center">
-        <button onclick="window.location.href='/portal/'">Login to Portal</button>
-        <button onclick="window.open('https://uq-rcc.github.io/ipp-docs/#/access')">Request Access</button>
+      <ul class="menu">
+        <li class="leaf"><a id="home-btn" href="#" title="home" class="menu__link active">Home</a></li>
+        <li class="leaf"><a id="portal-btn" href="/portal/" title="portal" class="menu__link">Portal</a></li>
+        <li class="leaf"><a id="contact-btn" href="https://uq-rcc.github.io/ipp-docs/#/contact" title="contact" class="menu__link" target="blank">Contact</a></li>
+        <li class="leaf"><a id="support-btn" target="_blank" href="https://uq-rcc.github.io/ipp-docs/" title="support" class="menu__link">Documentation</a></li>
+        <li class="leaf"><a id="releases-btn" target="_blank" href="https://github.com/UQ-RCC/ipp/releases" title="releases" class="menu__link">Releases</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="panel-pane__content">
+  <div class="hero-banner--thin light-palette hero-banner hero-banner--background-image" style="background-image:url(&quot;images/microscopy/facilities-hero1.jpg&quot;)">
+    <!--div id="overlay" align="center">
+      <button onclick="window.location.href='/portal/'">Login to Portal</button>
+      <button onclick="window.open('https://uq-rcc.github.io/ipp-docs/#/access')">Request Access</button>
+    </div-->
+    <div class="hero-banner__container">
+      <div class="hero-banner__content">
+        <div class="hero-banner__body">
+          <div class="item-list">
+            <ul class="hero-banner__buttons small-block-grid-1 large-block-grid-3">
+              <li class="first"><a href="/portal/">Login to Portal</a></li>
+              <li class=" last"><a href="https://uq-rcc.github.io/ipp-docs/#/access">Request Access</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+</div>
 
 <div class="page" style="margin-bottom: 50px;">
   <div class="container">
@@ -313,6 +315,7 @@
 <script src="js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/style/uq/js/uq_standard_main-menu.js"></script>
 <!-- Script to Activate the Carousel -->
 <script>
 $('.carousel').carousel({
