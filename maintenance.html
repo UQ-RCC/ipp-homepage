@@ -106,7 +106,7 @@
       <h3 class="page-header">
         Who can use the portal?
       </h3>
-      Anyone with a UQ and Wiener account. A UQ-RDM needs to be mounted on the Wiener HPC to use with the portal. Click on the following <a href="https://uq-rcc.github.io/ipp-docs/#/access">link</a> to to learn more about setting up an account on the portal.
+      Anyone with a UQ and Bunya account. A UQ-RDM needs to be mounted on the Bunya HPC to use with the portal. Click on the following <a href="https://uq-rcc.github.io/ipp-docs/#/access">link</a> to to learn more about setting up an account on the portal.
     </div>
 
     <div class="row" id="why">
@@ -119,14 +119,14 @@
     <!-- Features Section -->
     <div class="row" id="Features">
         <h3 class="page-header">Features</h3>
-          <p>The IPP utilises the <a href="https://rcc.uq.edu.au/wiener">Wiener</a> GPU-accelerated HPC system to make use of massively parallel image processing jobs. 
+          <p>The IPP utilises the <a href="https://rcc.uq.edu.au/systems/high-performance-computing/bunya">Bunya</a> GPU-accelerated HPC system to make use of massively parallel image processing jobs. 
             The portal is backed by the <a href="https://rcc.uq.edu.au/data-storage">MeDiCI</a> network infrastructure and can access image data-sets mounted on the <a href="https://research.uq.edu.au/rmbt/uqrdm">Research Data Manager (RDM)</a> GPFS based file system.</p>  
           
             <p>Currently the <a href="https://github.com/UQ-RCC/ipp">IPP</a> has the following pipelines enabled:<p/>
             <div class="col-lg-12">
               <li> <b>File Management</b>: The ability to explore, copy/paste, and delete files interactively from within the browser, allowing files to be moved between collections, or organised on native HPC infrastructure, without having to bring the files locally to the users device.</li>
               <li> <b>Desktops Manager</b>: The ability to spin up one of 3 different flavours of Linux virtual desktop (running <a href="https://www.cvl.org.au/">CVL</a>) to launch files into from the file browser.</li>
-              <li> <b>Converter:</b> File conversion between the .ims (Imaris/Fusion) filetype and .tiff individual Z-stacks for accelerated ingest into Wiener. Coming soon .sld (Slidebook) will be implemented as a parallel processed for SButility (also developed by RCC).</li>
+              <li> <b>Converter:</b> File conversion between the .ims (Imaris/Fusion) filetype and .tiff individual Z-stacks for accelerated ingest into Bunya. Coming soon .sld (Slidebook) will be implemented as a parallel processed for SButility (also developed by RCC).</li>
               <li> <b>PreProcessing:</b> Batch processing and deskewing of Lattice Light-Sheet data-sets, as well as PSF distillation (bead centring & averaging).</li>
               <li> <b>Deconvolution:</b> Currently utilising Microvolution Deconvolution (with Light-Sheet, Widefield, Confocal and 2-Photon modalities supported) for either individual files or directories of files. This mode also supports Generating a PSF or suppling your own measured PSF files. Deconvolution is currently supported on up to 10 nodes simultaneously utilising up to 40 GPUs.</li>
               <li> <b>Job List:</b> Shows currently running jobs by the user by querying the SLURM queue</li>
